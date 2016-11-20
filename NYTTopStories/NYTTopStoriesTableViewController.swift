@@ -19,6 +19,8 @@ class NYTTopStoriesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = section.localizedCapitalized   
 
         APIRequestManager.manager.getData(endPoint: nyTimesApiEndpoint) { (data: Data?) in
             if let validData = data {
@@ -69,7 +71,7 @@ class NYTTopStoriesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //UIApplication.shared.open(URL(nyTimesTopStories[indexPath.row].url)!)
+        UIApplication.shared.open(nyTimesTopStories[indexPath.row].url)
     }
     
 

@@ -13,7 +13,7 @@ class TopStory {
     var byLine: String
     var datePublished: String
     var abstract: String
-    //var url: String
+    var url: URL
     
     init?(from dict: [String:Any]) {
         guard let title = dict["title"] as? String,
@@ -24,15 +24,16 @@ class TopStory {
                 return nil
         }
         
-//        guard let url = dict["url"] as? String else {
-//            print("Why won't url parse!!!!")
-//            return nil
-//        }
+        guard let stringURL = dict["url"] as? String,
+            let url = URL(string: stringURL) else {
+            print("Why won't url parse!!!!")
+            return nil
+        }
         self.title = title
         self.byLine = byLine
         self.datePublished = date
         self.abstract = abstract
-        //self.url = url
+        self.url = url
     }
     
     static func parseObjects(from arr: [[String:Any]]) -> [TopStory] {
