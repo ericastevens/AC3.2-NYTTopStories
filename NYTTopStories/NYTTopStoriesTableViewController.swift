@@ -20,7 +20,10 @@ class NYTTopStoriesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = section.localizedCapitalized   
+        self.title = section.localizedCapitalized
+       //Next 2 lines allows for dynamic cell sizes that adjusts based on the amount of info
+        self.tableView.estimatedRowHeight = 200
+        self.tableView.rowHeight = UITableViewAutomaticDimension
 
         APIRequestManager.manager.getData(endPoint: nyTimesApiEndpoint) { (data: Data?) in
             if let validData = data {

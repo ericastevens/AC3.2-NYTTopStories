@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="145"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yS3-b8-xXi" id="w6C-Ce-mBL">
-                                    <frame key="frameInset" width="375" height="144"/>
+                                    <frame key="frameInset" width="375" height="144.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTO-bJ-HCo">
@@ -59,6 +59,7 @@
                                         <constraint firstItem="6M8-kb-bbV" firstAttribute="leading" secondItem="w6C-Ce-mBL" secondAttribute="leadingMargin" id="MNo-af-ndS"/>
                                         <constraint firstItem="1oS-d3-2DJ" firstAttribute="top" secondItem="w6C-Ce-mBL" secondAttribute="topMargin" id="Otm-f7-Uq0"/>
                                         <constraint firstItem="BTO-bJ-HCo" firstAttribute="trailing" secondItem="w6C-Ce-mBL" secondAttribute="trailingMargin" id="YZY-IG-IQ6"/>
+                                        <constraint firstItem="1oS-d3-2DJ" firstAttribute="leading" secondItem="BTO-bJ-HCo" secondAttribute="leading" id="cDh-Q3-NvQ"/>
                                         <constraint firstItem="1oS-d3-2DJ" firstAttribute="leading" secondItem="w6C-Ce-mBL" secondAttribute="leadingMargin" id="cvH-zA-OTZ"/>
                                         <constraint firstItem="6M8-kb-bbV" firstAttribute="top" secondItem="WHc-uY-EaY" secondAttribute="bottom" constant="8" id="dtc-qO-HBt"/>
                                         <constraint firstItem="WHc-uY-EaY" firstAttribute="top" secondItem="BTO-bJ-HCo" secondAttribute="bottom" constant="1" id="e80-Sa-qVB"/>
